@@ -1,0 +1,16 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Nova Browser Main Module"
+    },
+    {
+      "name": "ability_desc",
+      "value": "Nova Browser"
+    },
+    {
+      "name": "ability_label",
+      "value": "Nova Browser"
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+# Build outputs
+/build
+/entry/build
+/.preview
+/entry/.preview
+
+# IDE files
+/.idea
+*.iml
+
+# Node modules
+/node_modules
+/entry/node_modules
+/oh_modules
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local configuration
+local.properties
+/entry/obfuscation-rules.txt
+
+# Package lock
+oh-package-lock.json5
+
+# Cache
+.cxx
+.hvigor
