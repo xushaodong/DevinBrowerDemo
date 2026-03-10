@@ -24,7 +24,7 @@
   "targets": [
     {
       "name": "default",
-      "runtimeOS": "HarmonyOS"
+      "runtimeOS": "OpenHarmony"
     }
   ]
 }

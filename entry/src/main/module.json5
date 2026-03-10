@@ -5,7 +5,7 @@
     "description": "$string:module_desc",
     "mainElement": "EntryAbility",
     "deviceTypes": [
-      "phone",
+      "default",
       "tablet"
     ],
     "deliveryWithInstall": true,
@@ -16,9 +16,9 @@
         "name": "EntryAbility",
         "srcEntry": "./ets/entryability/EntryAbility.ets",
         "description": "$string:ability_desc",
-        "icon": "$media:layered_image",
+        "icon": "$media:icon_logo",
         "label": "$string:ability_label",
-        "startWindowIcon": "$media:startIcon",
+        "startWindowIcon": "$media:icon_logo",
         "startWindowBackground": "$color:start_window_background",
         "exported": true,
         "skills": [

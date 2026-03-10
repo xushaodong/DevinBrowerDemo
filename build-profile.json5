@@ -1,18 +1,35 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "material": {
+          "certpath": "C:/Users/Admin/.ohos/config/openharmony/default_DevinBrowerDemo_agfr4p5HEliWGckKQOYrW2tMoprgSf1F6V85vnz4fI4=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B06839856A90BD756786D9A3EFF4856F2B38F47E27E24AB40F1CEB984D65931E31F0C4AF5845D90",
+          "profile": "C:/Users/Admin/.ohos/config/openharmony/default_DevinBrowerDemo_agfr4p5HEliWGckKQOYrW2tMoprgSf1F6V85vnz4fI4=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:/Users/Admin/.ohos/config/openharmony/default_DevinBrowerDemo_agfr4p5HEliWGckKQOYrW2tMoprgSf1F6V85vnz4fI4=.p12",
+          "storePassword": "0000001B7A63B48F6B7BFF5625EED20D1F2D927A3B9F3CE847D9D0DCC36CB90EA3631A675BF074A414CCC0"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
         "signingConfig": "default",
-        "compatibleSdkVersion": "5.0.0(12)",
-        "runtimeOS": "HarmonyOS",
+        //        "compatibleSdkVersion": "5.0.0(12)",
+        //        "runtimeOS": "HarmonyOS",
+        "compileSdkVersion": 14,
+        "targetSdkVersion": 14,
+        "compatibleSdkVersion": 14,
+        "runtimeOS": "OpenHarmony",
         "buildOption": {
           "strictMode": {
             "caseSensitiveCheck": true,
-            "useProjectRecordType": true
           }
-        }
+        },
+        //        "targetSdkVersion": "6.0.0(20)"
       }
     ],
     "buildModeSet": [

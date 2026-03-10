@@ -11,7 +11,7 @@ export struct SearchBar {
   @Prop isIncognito: boolean = false;
   onSearch: (text: string) => void = () => {};
   onTextChange: (text: string) => void = () => {};
-  onFocus: () => void = () => {};
+  onCommit: () => void = () => {};
 
   build() {
     Row() {
@@ -38,7 +38,7 @@ export struct SearchBar {
           this.onSearch(this.searchText);
         })
         .onClick(() => {
-          this.onFocus();
+          this.onCommit();
         })
 
       // Clear button

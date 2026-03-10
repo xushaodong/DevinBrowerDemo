@@ -29,9 +29,9 @@ struct Index {
   /** Loading progress (0-100) */
   @State loadProgress: number = 0;
   /** Whether the WebView can go back */
-  @State canGoBack: boolean = false;
+  @State canGoBack: boolean = true;
   /** Whether the WebView can go forward */
-  @State canGoForward: boolean = false;
+  @State canGoForward: boolean = true;
   /** Whether the menu panel is visible */
   @State showMenu: boolean = false;
   /** Current page title from WebView */
@@ -326,6 +326,7 @@ struct Index {
                   try {
                     this.canGoBack = this.webController.accessBackward();
                     this.canGoForward = this.webController.accessForward();
+
                   } catch (e) {
                     // Ignore
                   }
@@ -361,22 +362,24 @@ struct Index {
           tabCount: this.tabCount,
           isIncognito: this.isIncognito,
           onBack: () => {
-            if (this.canGoBack) {
-              try {
-                this.webController.backward();
-              } catch (e) {
-                // Ignore
-              }
-            }
+            this.webController.backward();
+            // if (this.canGoBack) {
+            //   try {
+            //     this.webController.backward();
+            //   } catch (e) {
+            //     // Ignore
+            //   }
+            // }
           },
           onForward: () => {
-            if (this.canGoForward) {
-              try {
-                this.webController.forward();
-              } catch (e) {
-                // Ignore
-              }
-            }
+            this.webController.forward();
+            // if (this.canGoForward) {
+            //   try {
+            //     this.webController.forward();
+            //   } catch (e) {
+            //     // Ignore
+            //   }
+            // }
           },
           onHome: () => {
             this.goHome();

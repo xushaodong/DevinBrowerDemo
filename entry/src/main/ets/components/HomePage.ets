@@ -42,7 +42,7 @@ export struct HomePage {
         isIncognito: this.isIncognito,
         onSearch: this.onSearch,
         onTextChange: this.onTextChange,
-        onFocus: () => {}
+        onCommit: () => {}
       })
       .margin({
         left: AppDimens.PADDING_LG,
